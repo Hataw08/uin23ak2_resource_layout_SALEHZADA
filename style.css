@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&display=swap');
+
+body, html {
+  font-family: Arial; 
+  margin-left: auto;
+  width: 1080px;
+  font-size: 16px;
+}
+
+:root {
+    --blue: #00ced1;
+    --white: #ffffff;
+    --black: #5f5f5f;
+}
+
+
+  h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    color: grey;
+    padding: .7rem;
+    border-style: groove;
+    width: 80%;
+    height: 100px;
+    justify-content: space-between;
+
+    
+}
+
+nav{
+   position: relative;
+   left: -39px;
+   width: 100%; 
+   background-color: var(--with);
+   display: flex;
+    
+}
+
+div.container{
+    width: 100%;
+    max-width: var(--maxwidth);
+    background-color: var(--white);
+}
+
+
+
+nav button:hover {
+    color: var(--black);
+    border-color: var(--blue);
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+nav button{
+color: var(--black);
+padding: 1rem;
+font-size: 19px;
+text-transform: uppercase;
+border: 1px solid #ccc;
+}
+
+
+.MenuItem:hover .open{
+    position: fixed;
+    top: auto;
+    display: block;
+    padding: 1rem;
+    border-style: groove;
+    width: 66.5%;
+    border-top:5px solid var(--blue);
+    height: 50%;
+    
+
+}
+#subMenu{
+    display: flex;
+    flex-direction: column;
+}
+
+div.open{
+    display: none;
+}
+
+ 
+    @media only screen and (max-width: 600px) {
+     body , html{
+      display: block;
+    }
+
+    h1{
+      width: 79%;
+    }
+  }  
+
+  /* Kilder: */
+
+  /* https://www.w3schools.com/cssref/sel_root.php */
+  /* https://www.w3schools.com/css/css3_variables.asp */
+  /* https://www.w3schools.com/cssref/func_var.php */
+ 
+
+
+
+  
+  
